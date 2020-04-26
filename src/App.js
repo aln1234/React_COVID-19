@@ -5,7 +5,7 @@ import CountryPicker from './components/CountryPicker/CountryPicker';
 import styles from './App.module.css'
 
 import { fetchData } from './api'
-import image from './images/image.png';
+import images from './images/images.png';
 
 
 class App extends React.Component {
@@ -30,7 +30,7 @@ class App extends React.Component {
         const { data, country } = this.state;
         return (
             <div className={styles.container}>
-                <img className={styles.image} src={image} alt='COVID-19' />
+                <img className={styles.image} src={images} alt='COVID-19' />
                 <Cards data={data} />
 
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
